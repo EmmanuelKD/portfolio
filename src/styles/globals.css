@@ -1,0 +1,924 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/PoppinsRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/PoppinsItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/PoppinsLight.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/PoppinsBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/PoppinsSemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/PoppinsBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Freestyle Script";
+  src: url("../assets/fonts/FreestyleScriptRegular.ttf") format("truetype");
+  font-weight: normal;
+  /* font-style: normal; */
+}
+
+html,
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mainAppbar {
+  position: absolute;
+  min-width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  color: white;
+  padding-left: 68px;
+  padding-right: 68px;
+  z-index: 1;
+}
+/* .appBarGetStarted {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 30px;
+  border: 1px solid white;
+} */
+
+/* .nav {
+  margin: 0;
+  padding: 0; 
+}
+.navUl {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .navLi a {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+} */
+/* .navLi {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-left: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+} */
+
+.activeNav {
+  background-color: red;
+}
+.getStarted {
+  border: "2px solid white";
+}
+
+.portfolioLogo {
+  font-family: "FreestyleScript";
+  font-size: 70px;
+  align-self: center;
+}
+
+/* landing===================== */
+
+.landingMain {
+  display: flex;
+  min-width: 100%;
+  height: 100vh;
+  background-color: #0e0c38;
+  position: relative;
+}
+
+.ellipse {
+  position: absolute;
+  top: 25%;
+  left: -10%;
+  z-index: 0;
+}
+
+.botsrightbottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.numExp {
+  position: absolute;
+  right: 1%;
+  bottom: 35%;
+  z-index: 0;
+}
+.topdot {
+  position: absolute;
+  z-index: 0;
+  left: 25%;
+  margin-top: -50px;
+}
+.topDotImage {
+  height: 175;
+  width: 390;
+  position: absolute;
+}
+
+.landingGridMain {
+  /* border: 2px solid red; */
+  display: grid;
+  position: absolute;
+  width: 100%;
+  min-height: 80%;
+  z-index: 1;
+  padding-left: 68px;
+  padding-right: 68px;
+  justify-self: center;
+  align-self: flex-end;
+}
+.myDetails {
+  display: flex;
+  align-items: center;
+  grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  align-content: flex-end;
+}
+/* .detailContent {
+  height: 80%;
+} */
+/* .greetLanding {
+  font-family: "Poppins";
+  font-size: 31px;
+  font-weight: lighter;
+}
+.nameLanding {
+  font-family: "Poppins";
+  font-size: 65px;
+  font-weight: bold;
+  line-height: 65px;
+} */
+
+.myImageCont {
+  grid-column: 2/3;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-self: baseline;
+  /* border: 2px solid white;  */
+}
+
+.myImage {
+  z-index: 1;
+  opacity: 0.8;
+  height: 80%;
+  justify-self: flex-end;
+  align-self: baseline;
+}
+.buttonConainer {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .portfolioBtn {
+  width:90px;
+  height:50px;
+  border-radius: 30px;
+  
+}
+.hireMeBtn {
+  
+  
+} */
+
+/* About Me==================== */
+
+.aboutMeMain {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #040221;
+  padding-left: 68px;
+  padding-right: 68px;
+  color: white;
+}
+
+.aboutMeMainGrid {
+  padding-top: 8%;
+  padding-bottom: 3%;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 60% 30%;
+  grid-template-columns: 50% 50%;
+}
+/* .aboutMeTitle {
+  grid-row: 1/2;
+  grid-column: 1/2;
+} */
+/* .aboutMeInfo {
+  grid-row: 2/3;
+  grid-column: 1/2;
+} */
+.aboutMeCVDwnldBtn {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  /* border: 1px solid white; */
+}
+.aboutMeImgfile {
+  margin: 6%;
+  margin-top: 14%;
+  margin-bottom: 14%;
+}
+.aboutMeImgMainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  height: 400px;
+  width: 500px;
+  background-color: #0e0c38;
+  z-index: 1;
+}
+.aboutMeImg {
+  z-index: 2;
+  grid-row: 1/4;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.bottomLeftAboutMe {
+  position: absolute;
+  bottom: -50;
+  left: 0;
+  width: 107;
+  height: 107;
+  z-index: 0;
+}
+.aboutMeTitleMain {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+/* .aboutMeTitleText {
+  font-weight: 600;
+  font-size: 30px;
+} */
+/* .aboutMeTitleLine {
+  width: 300px;
+  background-color: red;
+  height: 2px;
+} */
+
+/* custom button ==================== */
+
+/* .customButtonFilled {
+  min-width: 100px;
+  min-height: 40px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-radius: 30px;
+   border: none;
+  cursor: pointer;
+}
+
+.customButtonOutlined {
+  min-width: 100px;
+  min-height: 40px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-radius: 30px;
+   border: 1px solid white;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+} */
+
+/* portfolio ================= */
+.portfolioMain {
+  min-height: 100vh;
+  background-color: #040221;
+  padding-left: 68px;
+  padding-right: 68px;
+  color: white;
+}
+
+.portfolioTitle {
+  /* padding-top: 2%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolioTitleMain {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.portfolioTitleText {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.portfolioTitleLine {
+  width: 100px;
+  background-color: red;
+  height: 2px;
+}
+
+/* tabBar  */
+
+.tabBarHeader {
+}
+
+.tabBarSection {
+  /* background-color: green; */
+}
+
+.tabBarHeader {
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.tabBarmain {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.tab {
+  margin-right: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: lighter;
+  /* margin-top: px; */
+  /* margin-bottom: 10px; */
+}
+
+.tabBody {
+  /* border: 2px solid red; */
+  /* width: 100%;
+  height: 100%; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* color: white; */
+}
+
+/* project card and  carousel */
+
+.projectCard {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.infoComponent {
+  width: 100%;
+  height: 100%;
+  display: none;
+  cursor: pointer;
+}
+.infoComponent:hover {
+  display: flex;
+
+  background-image: rgba(255, 0, 0, 0.233);
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.carouselMain {
+  /* display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%; */
+}
+.carouselComponent {
+  /* width: 800px;  
+  height: 90%;
+  display: flex; 
+  flex-wrap: wrap; */
+}
+/* hack 1 */
+.carouselComponent::before {
+  /* content: "";
+  width: 100%;
+  order: 1; */
+}
+
+.carouselMain.carouselComponent.projectCard:nth-child(2):nth-last-child(3)
+  ~ .projectCard {
+  order: 2;
+}
+
+/* .carouselMain
+.carouselComponent {
+  max-width: 900px;
+} */
+
+/* hack ===== */
+
+.carouselHeaderMain {
+  align-self: flex-end;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.PagnationButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.PagnationButton:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: red;
+}
+
+/*My Capabilities  */
+.myCapabilityMain {
+  height: 100vh;
+  background-color: #0e0c38;
+  padding-left: 68px;
+  padding-right: 68px;
+  color: white;
+}
+
+.myCapabilityTitle {
+  /* padding-top: 3%; */
+  /* padding-bottom: 3%; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.myCapabilityTitleMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.myCapabilityTitleText {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.myCapabilityTitleLine {
+  width: 300px;
+  background-color: red;
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.myCapabilityInfoMain {
+  width: 100%;
+}
+.myCapabilityInfoText {
+}
+
+.myCapabilitiesMain {
+  display: flex;
+
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+
+.myCapabilitiesMainFlex {
+  display: flex;
+  width: 100%;
+}
+
+.myCapabilityComponent {
+}
+
+/* --MyCapabilities */
+
+.cardComponent {
+  width: 100px;
+  margin: 5px;
+}
+.cardComponentImg {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.customSelect {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.customSelectMain {
+}
+.customSelectSelect {
+  border: 2px solid red;
+  border-radius: 50px;
+  padding: 5px;
+  min-width: 130px;
+  background-color: #040221;
+  color: red;
+  font-size: 15px;
+  /* min-height: 30px; */
+}
+.customSelectOptions:focus {
+  outline: none !important;
+  border-color: red;
+  box-shadow: "0 0 10px red";
+}
+
+.customSelectOptions {
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+}
+.emperienceLevelMain {
+  width: 100%;
+  height: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.emperienceLevelValue {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 3;
+  color: white;
+}
+.emperienceLevel {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #040221;
+  color: red;
+  border-radius: 50px;
+}
+
+.emperienceLevelPercent {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  height: 100%;
+  z-index: 2;
+  background-color: red;
+  border-radius: 50px;
+  border: 3px solid #040221;
+}
+
+/* clientReview======== */
+
+.clientReview {
+  background-color: #040221;
+  position: relative;
+  min-height: 100vh;
+  padding-left: 68px;
+  padding-right: 68px;
+  color: white;
+}
+.clientReviewConetneGrid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 1fr;
+}
+
+.MessageMeMain {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 1fr;
+}
+
+/* Lets go to work */
+
+.contactMeTitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contactMeTitleMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.contactMeTitleText {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.contactMeTitleLine {
+  width: 300px;
+  background-color: red;
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.contactMeInfoMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.ContactMeMain {
+  background-color: #0e0c38;
+  position: relative;
+  min-height: 100vh;
+  padding-left: 68px;
+  padding-right: 68px;
+  color: white;
+}
+.contactMeInfoText {
+}
+
+/* ==================== Hire me */
+.CustomTextFieldMain {
+  /* width: 300px; */
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+/* 
+.CustomTextField {
+   width: 200px; 
+   
+  flex-grow: 1;
+  padding: 0;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.CustomTextField:focus {
+  outline: none !important;
+  background: none;
+}
+.CustomTextField:active {
+  outline: none !important;
+  background: none;
+} */
+
+/* .CustomTextPrefix {
+  padding-left: 4px;
+  padding-right: 3px;
+  height: 100%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.CustomTextSurfix {
+  padding-left: 3px;
+  padding-right: 4px;
+  font-weight: 600;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+} */
+.dotsClass {
+  width: 5px;
+  height: 5px;
+  borderradius: "100%";
+  backgroundcolor: "red";
+}
+
+/* .CustomTextFieldMultiLineMain {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+} */
+/* .CustomTextFieldMultiLine {
+  width: 100%;
+  resize: vertical;
+  outline: none;
+  border: none;
+}
+.CustomTextFieldMultiLine:focus {
+  outline: none;
+} */
+.contactMeContentMain {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.HireMeGridMain {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+}
+.HireMeGridName {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin: 6px;
+}
+.HireMeGridEmail {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin: 6px;
+}
+.HireMeGridPhone {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin: 6px;
+}
+.HireMeGridBudget {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin: 6px;
+}
+.HireMeGridMessage {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  margin: 6px;
+}
+.HireMeGridSubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 4/5;
+  grid-column: 1/3;
+}
+
+/* footer */
+
+.portfolioFooterMain {
+  display: flex;
+  min-height: 50vh;
+  flex-direction: column;
+  /* flex-direction: column;
+  flex-wrap: nowrap; */
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #040221;
+  padding-left: 68px;
+  padding-right: 68px;
+  color: white;
+}
+.portfolioFooterHorLine {
+  width: 2px;
+  background-color: red;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.MuiTabs-scroller:first-child {
+  overflow: scroll !important;
+}
+/* .footerNavUl {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+} */
+/* .css-1gsv261 {
+  border-bottom: 0px;
+    
+} */
+
+/* 
+.muitabs-scroller,
+.muitabs-fixed ,
+.css-jpln7h-muitabs-scroller: {
+  overflow-x: scroll;
+} 
+*/
+.css-1aquho2-MuiTabs-indicator {
+  position: absolute;
+  display: none;
+  height: 2px;
+}

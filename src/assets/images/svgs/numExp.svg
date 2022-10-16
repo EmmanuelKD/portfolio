@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="163" viewBox="0 0 52 183">
+  <g id="Group_31" data-name="Group 31" transform="translate(-1833.5 -294)">
+    <text id="_01" data-name="01" transform="translate(1851 315)" fill="#fff" font-size="20" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">01</tspan></text>
+    <text id="_02" data-name="02" transform="translate(1848 365)" fill="#8d8d8d" font-size="20" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">02</tspan></text>
+    <text id="_03" data-name="03" transform="translate(1848 414)" fill="#8d8d8d" font-size="20" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">03</tspan></text>
+    <text id="_04" data-name="04" transform="translate(1848 463)" fill="#8d8d8d" font-size="20" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">04</tspan></text>
+    <line id="Line_2" data-name="Line 2" x2="52" transform="translate(1833.5 328.5)" fill="none" stroke="#707070" stroke-width="3" opacity="0.2"/>
+    <line id="Line_3" data-name="Line 3" x2="52" transform="translate(1833.5 377.5)" fill="none" stroke="#707070" stroke-width="3" opacity="0.2"/>
+    <line id="Line_4" data-name="Line 4" x2="52" transform="translate(1833.5 426.5)" fill="none" stroke="#707070" stroke-width="3" opacity="0.2"/>
+    <line id="Line_5" data-name="Line 5" x2="52" transform="translate(1833.5 475.5)" fill="none" stroke="#707070" stroke-width="3" opacity="0.2"/>
+  </g>
+</svg>
