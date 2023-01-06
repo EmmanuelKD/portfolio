@@ -8,7 +8,8 @@ interface ProjectCardProps {
   style?: CSSProperties
   tailwindStyle?: string
   data: ProjectDataType;
-  index: number
+  index: number,
+  onClick: (data: ProjectDataType) => void
 }
 
 
@@ -24,7 +25,7 @@ const CardMain = styled(Card, { shouldForwardProp: (prop) => prop !== "backgroun
 
   alignItems: "center",
   backgroundImage: `url(${backgroundImgSrc})`,
-  borderRadius: "40px",
+  borderRadius: "10px",
   backgroundRepeat: "no-repeat",
   // flexDirection: "column",
 
@@ -34,6 +35,7 @@ const CardMain = styled(Card, { shouldForwardProp: (prop) => prop !== "backgroun
 
   width: "100%",
   [theme.breakpoints.up("md")]: {
+    borderRadius: "40px",
     // flex: 1,
     // width: "auto",
     // maxWidth: "auto",
@@ -42,7 +44,7 @@ const CardMain = styled(Card, { shouldForwardProp: (prop) => prop !== "backgroun
     // height: "306px",
     maxWidth: 300,
     "&:hover": {
-      transform: "scale(1,1.2)",
+      transform: "scale(1,1.2) ",
       transitionTimingFunction: "ease-in-out",
       transition: "all 800ms",
     },
@@ -67,15 +69,14 @@ const ProjectInfo = styled('div')(({ theme }) => ({
   flex: 1,
   opacity: 0,
   backgroundColor: "red",
-  borderRadius: "40px",
-
+  borderRadius: "10px",
   "&:hover": {
     transition: "opacity 800ms",
     opacity: .9,
   },
   zIndex: 100000000,
   [theme.breakpoints.up("md")]: {
-
+    borderRadius: "40px",
   },
   [theme.breakpoints.up("lg")]: {
 
@@ -84,7 +85,7 @@ const ProjectInfo = styled('div')(({ theme }) => ({
 
 }));
 export default function ProjectCard(props: ProjectCardProps) {
-  const { data, index } = props;
+  const { data, index, onClick } = props;
 
   const {
     contributors,
@@ -98,12 +99,16 @@ export default function ProjectCard(props: ProjectCardProps) {
   } = data;
 
   return (
-    <Box sx={{ p: theme => theme.spacing(2), py: theme => theme.spacing(3.5) }}>
+    <Box
+      onClick={() => {
+        onClick(data)
+      }}
+      sx={{ p: theme => theme.spacing(2), py: theme => theme.spacing(3.5) }}>
       <CardMain
         backgroundImgSrc={imageUrl}
         style={{ ...props.style }}
       >
-        <ProjectInfo>
+        {/* <ProjectInfo>
           <Box
             sx={{
               p: th => th.spacing(2),
@@ -111,7 +116,10 @@ export default function ProjectCard(props: ProjectCardProps) {
               fontWeight: 500,
             }}
           >For {owner}</Box>
-        </ProjectInfo>
+          <Box>
+            {description}
+          </Box>
+        </ProjectInfo> */}
       </CardMain>
     </Box>
   );

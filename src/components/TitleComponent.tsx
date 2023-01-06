@@ -6,9 +6,12 @@ const TitleBody = styled('div')(({ theme }) => ({
     alignItems: "center",
     paddingTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
+    // marginTop: theme.spacing(2),
     color: "white",
     [theme.breakpoints.up("md")]: {
         flexDirection: "column",
+        paddingTop: theme.spacing(3),
+        marginBottom: theme.spacing(3),
     },
 
 }));
@@ -18,6 +21,7 @@ const AboutMeTitleLine = styled('div')(({ theme }) => ({
     width: "250px",
     backgroundColor: "red",
     height: "2px",
+    marginTop: theme.spacing(1.5),
     [theme.breakpoints.up("md")]: {
         width: "300px",
         // flexDirection: "column",

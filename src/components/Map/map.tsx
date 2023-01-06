@@ -91,6 +91,50 @@ export default function CustomExperienceMap() {
                 <CustomSlider
                     settingsProp={
                         {
+                            slidesToShow: 4,
+                            responsive: [
+                                {//xl
+                                    breakpoint: 1536,
+                                    settings: {
+                                        slidesToShow: 3,
+                                    }
+
+                                },
+                                {//lg
+                                    breakpoint: 1200,
+                                    settings: {
+                                        slidesToShow: 3,
+                                    }
+                                },
+                                {//md
+                                    breakpoint: 800,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        dots: true,
+                                        infinite: true,
+                                        arrows: true
+                                    }
+                                },
+                                {//sm
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        dots: true,
+                                        infinite: false,
+                                        arrows: false
+                                    }
+                                },
+                                {
+                                    //xs
+                                    breakpoint: 0,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        dots: true,
+                                        infinite: true,
+                                        arrows: false
+                                    }
+                                }
+                            ]
                             // rows: 1 
                         }
                     }

@@ -14,7 +14,7 @@ const CustomTextFieldMultiLineMain = styled('div')(({ theme }) => ({
   alignItems: "center",
   flexWrap: "nowrap",
   padding: theme.spacing(1),
-
+  borderRadius: 5,
   [theme.breakpoints.up("md")]: {
   },
 
@@ -28,6 +28,7 @@ const CustomTextFieldMain = styled('div')(({ theme }) => ({
   backgroundColor: "white",
   paddingLeft: theme.spacing(1),
   paddingRight: theme.spacing(1),
+  borderRadius: 5,
   [theme.breakpoints.up("md")]: {
     height: "64px",
   },
@@ -55,6 +56,7 @@ interface textFieldProps {
 const CustomTextFieldInput = styled("input")(({ theme }) => ({
   flexGrow: 1,
   padding: 0,
+
   // height: "64px",
   height: "100%",
   width: "100%",

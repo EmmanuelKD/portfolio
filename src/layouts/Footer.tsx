@@ -6,13 +6,14 @@ import { LinkType, MyInfoDataType } from "../types";
 const
   FooterNavUl = styled('ul')(({ theme }) => ({
     display: "flex",
-    width: "310px",
+    overflow: "wrap",
     justifyContent: "space-between",
     listStyleImage: "1",
     alignItems: "center",
     flexWrap: "wrap",
     [theme.breakpoints.up("md")]: {
       width: "400px",
+      // width: "310px",
     },
 
   }));
@@ -79,8 +80,8 @@ export default function Footer({ data }: { data?: MyInfoDataType }) {
         </div>
 
       </FooterContent>
-      <div></div>
-      <div>
+
+      <div style={{ textAlign: "center" }}>
         Design by Graphic studios build with love by me
       </div>
     </div>

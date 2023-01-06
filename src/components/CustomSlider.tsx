@@ -1,6 +1,6 @@
-import { Typography, useMediaQuery, useTheme } from "@mui/material";
+import { styled, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Box, getThemeProps } from "@mui/system";
-import React from "react";
+import React, { Children } from "react";
 import Slider, { Settings } from "react-slick";
 import Loading from "./Loading";
 
@@ -8,10 +8,19 @@ export default function CustomSlider({ settingsProp, children }: { settingsProp:
     const theme = useTheme()
     const initialSlide = 0;
 
+    const StyleDot = styled("div")(({ theme }) => ({
+        // "&>:first-child": {
+        //     color: "red",
+        //     backgroundColor: "red",
+        //     position: "relative",
+        // }
 
+    }))
 
     function SampleNextArrow(props: any) {
         const { className, currentSlide, style, onClick } = props;
+
+
 
 
         return (
@@ -85,23 +94,24 @@ export default function CustomSlider({ settingsProp, children }: { settingsProp:
                         height: "50px",
                         width: "100%",
                         position: "relative",
-                        backgroundColor: "transparent",
+
                     }}>
 
                     <ul
                         style={{
                             marginLeft: "30%",
                             marginRight: "30%",
-                            backgroundColor: "white",
+                            // backgroundColor: "white",
                             display: "flex",
                             flexDirection: "row",
                             flexWrap: "nowrap",
                             justifyContent: "space-between",
                             alignItems: "center",
-
                         }}>
 
-                        {dots}
+                        {Children.toArray(dots).map((chi, i) => {
+                            return <StyleDot key={i}>{chi}</StyleDot>
+                        })}
 
                     </ul>
                 </div>
@@ -160,7 +170,7 @@ export default function CustomSlider({ settingsProp, children }: { settingsProp:
 
     const _Children = React.useMemo(() => children, [children]);
     if (_Children === null)
-        return <Loading/>
+        return <Loading />
     return (
 
         <Slider

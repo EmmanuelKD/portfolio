@@ -157,6 +157,7 @@ export default function HireMe() {
               display: "flex",
               justifyContent: "center",
               bgcolor: "white",
+              borderRadius: 1.5,
               maxHeight: "64px",
               width: "100%", height: "100%", px: th => th.spacing(1),
             }}>

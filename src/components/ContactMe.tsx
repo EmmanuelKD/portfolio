@@ -40,7 +40,7 @@ const LinkedBtn: React.FC<itemProp> = (prop) => {
 };
 
 
-const ListItem: React.FC<LinkType> = (props) => {
+export const LinkRender: React.FC<LinkType> = (props) => {
   const { name, type, url, imageUrl } = props;
 
 
@@ -79,7 +79,7 @@ const ContactMe: React.FC<{ links: LinkType[] }> = (props) => {
       }}
     >
       {props.links?.map((value, i) => (
-        <ListItem key={i} name={value.name} type={value.type} url={value.url} />
+        <LinkRender key={i} name={value.name} type={value.type} url={value.url} />
       ))}
     </div>
   );

@@ -146,6 +146,7 @@ export function TabComponent({ tabs, Children }: {
         dots: false,
         infinite: false,
         speed: 500,
+        slidesToShow: 3,
         // slidesToScroll: numberOfSlideToShow,
         initialSlide: initialSlide,
         nextArrow: <SampleNextArrow />,
@@ -160,14 +161,14 @@ export function TabComponent({ tabs, Children }: {
                         height: "50px",
                         width: "100%",
                         position: "relative",
-                        backgroundColor: "transparent",
+                        // backgroundColor: "transparent",
                     }}>
 
                     <ul
                         style={{
                             marginLeft: "30%",
                             marginRight: "30%",
-                            backgroundColor: "white",
+                            // backgroundColor: "white",
                             display: "flex",
                             flexDirection: "row",
                             flexWrap: "nowrap",
@@ -184,21 +185,21 @@ export function TabComponent({ tabs, Children }: {
         },
 
         responsive: [
-            {//xl
-                breakpoint: 1536,
-                settings: {
-                    slidesToShow: 3,
-                }
+            // {//xl
+            //     breakpoint: 1536,
+            //     settings: {
+            //         slidesToShow: 3,
+            //      }
 
-            },
-            {//lg
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
+            // },
+            // {//lg
+            //     breakpoint: 1200,
+            //     settings: {
+            //         slidesToShow: 3,
+            //      }
+            // },
             {//md
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
                     dots: true,
